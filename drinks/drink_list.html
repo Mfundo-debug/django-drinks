@@ -1,0 +1,19 @@
+    
+    ```html
+{% extends 'drinks/base.html' %}
+
+{% block content %}
+    <h1>Drinks</h1>
+    <ul>
+        {% for drink in drinks %}
+            <li>
+                <a href="{% url 'drinks:drink_detail' drink.id %}">
+                    {{ drink.name }}
+                </a>
+            </li>
+        {% empty %}
+            <li>No drinks yet.</li>
+        {% endfor %}
+    </ul>
+{% endblock content %}
+```
