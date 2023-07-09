@@ -1,2 +1,2 @@
 # django-drinks
-django drinks order
+- [x] building an api from scratch
